@@ -1,5 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
+import { BlogData } from "./BlogData";
 
 function Feature() {
   return (
@@ -28,7 +29,21 @@ function App() {
       {/* <Feature></Feature>
       <Feature></Feature>
       <Feature></Feature> */}
-      <BlogItem
+
+      {BlogData.map((item, index) => (
+        // <div className="" key={item.id}>
+        //   Hello Item {index + 1}
+        // </div>
+        <BlogItem
+          key={item.id}
+          image={item.image}
+          avatar={item.avatar}
+          title={item.title}
+          author={item.author}
+        ></BlogItem>
+      ))}
+
+      {/* <BlogItem
         image="https://images.unsplash.com/photo-1543134471-52488faa85af?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
         avatar="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
       ></BlogItem>
@@ -59,7 +74,7 @@ function App() {
       <BlogItem
         image="https://images.unsplash.com/photo-1543134471-52488faa85af?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
         avatar="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
-      ></BlogItem>
+      ></BlogItem> */}
     </div>
   );
   // return (
