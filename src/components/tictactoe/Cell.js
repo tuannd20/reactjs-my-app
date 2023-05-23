@@ -8,10 +8,10 @@ import React from "react";
 // const { name, age } = student;
 
 const Cell = (props) => {
-  const { value, onClick } = props;
+  const { value, onClick, className } = props;
   return (
-    <div className="game-cell" onClick={props.onClick}>
-      <div className="">{props.value}</div>
+    <div className={`game-cell ${className}`} onClick={onClick}>
+      <div className="">{value}</div>
     </div>
   );
 };
