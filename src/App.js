@@ -10,8 +10,8 @@ function App() {
     <div className="">
       {/* <Toggle></Toggle>
       <Counter></Counter> */}
-      {/* <Game></Game> */}
-      <Product></Product>
+      <Game></Game>
+      {/* <Product></Product> */}
     </div>
   );
 }

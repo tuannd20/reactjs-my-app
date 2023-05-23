@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import "./FormStyles.css";
+import Modal from "./Modal";
 
 function Product() {
+  const [modal, setModal] = useState(false);
+
+  const handleOpenModal = () => {
+    setModal((modal) => !modal);
+  };
+
   return (
     <div className="container">
       <div className="product-item">
@@ -21,11 +28,12 @@ function Product() {
             <option value="fiat">DB</option>
             <option value="audi">BA</option>
             <option value="other">
-              <button>Add more</button>
+              <button onClick={handleOpenModal}>Add more</button>
             </option>
           </select>
         </div>
       </div>
+      {modal === true && <Modal />}
     </div>
   );
 }
