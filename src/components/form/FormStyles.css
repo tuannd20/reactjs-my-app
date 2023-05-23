@@ -1,0 +1,18 @@
+.container {
+  /* display: flex;
+  justify-content: center; */
+  /* align-items: center; */
+  margin-top: 16px;
+  /* background-color: #20E3B2; */
+}
+
+.product-item {
+  display: flex;
+  padding: 30px;
+  align-items: center;
+}
+
+.product-item > input {
+  margin-left: 14px;
+  padding: 6px;
+}
