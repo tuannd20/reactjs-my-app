@@ -1,5 +1,6 @@
 import "./App.css";
 import BlogList from "./components/blog/BlogList";
+import Button from "./components/button/Button";
 import Counter from "./components/counter/Counter";
 import Product from "./components/form/Product";
 import Game from "./components/tictactoe/Game";
@@ -12,6 +13,8 @@ function App() {
       <Counter></Counter> */}
       <Game></Game>
       {/* <Product></Product> */}
+      <Button>Primary</Button>
+      <Button secondary>Secondary</Button>
     </div>
   );
 }
