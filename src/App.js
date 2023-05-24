@@ -8,6 +8,7 @@ import Product from "./components/form/Product";
 import Game from "./components/tictactoe/Game";
 import Toggle from "./components/toggle/Toggle";
 import CardList from "./components/card/CardList";
+import Photos from "./components/photo/Photos";
 
 function App() {
   return (
@@ -19,14 +20,15 @@ function App() {
       {/* <Button>Primary</Button>
       <Button secondary>Secondary</Button> */}
       {/* <Card></Card> */}
-      <CardList>
+      {/* <CardList>
         <Card></Card>
         <Card></Card>
         <Card></Card>
         <Card></Card>
         <Card></Card>
         <Card></Card>
-      </CardList>
+      </CardList> */}
+      <Photos></Photos>
     </div>
   );
 }
