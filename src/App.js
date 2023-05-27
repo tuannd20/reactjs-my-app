@@ -1,5 +1,4 @@
 import React from "react";
-// import "./App.css";
 import BlogList from "./components/blog/BlogList";
 import Button from "./components/button/Button";
 import Card from "./components/card/Card";

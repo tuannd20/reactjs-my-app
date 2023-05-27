@@ -18,16 +18,17 @@ const Photos = () => {
 
   useEffect(() => {
     getRandomPhotos().then((images) => {
+      console.log(images);
       setRandomPhotos(images);
     });
   }, []);
 
-  console.log(typeof randomPhotos);
-
   return (
-    <div>
+    <div className="grid grid-cols-4 gap-4 p-5">
       {randomPhotos.map((item, index) => (
-        <div key={item.id}>{item.id}</div>
+        <div key={item.id} className="p-3 bg-white shadow-md rounded-lg">
+          <img src={item.download_url} alt={item.author} />
+        </div>
       ))}
     </div>
   );
